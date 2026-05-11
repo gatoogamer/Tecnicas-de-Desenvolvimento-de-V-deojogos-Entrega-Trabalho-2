@@ -43,7 +43,7 @@ O mapa é gerado através da leitura de pixels de uma imagem.
 
 ---
 
-## ✅ Colisões
+## Colisões
 Existem colisões com:
 - pedras;
 - limites da pista;
@@ -86,7 +86,7 @@ HUD no canto superior esquerdo:
 
 ---
 
-# 🎯 Controlos
+# Controlos
 
 | Tecla | Ação |
 |---|---|
