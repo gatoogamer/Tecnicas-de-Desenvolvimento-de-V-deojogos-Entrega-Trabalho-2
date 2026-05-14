@@ -2,7 +2,7 @@
 
 | Nome | Número |
 | Gabriel Lima | Nº34981 |
-| Andre | Nº34984 | 
+| André Rodrigues | Nº34984 | 
 
 
 Patos em Fuga 
@@ -12,7 +12,8 @@ Descrição do Jogo
 O objetivo é chegar primeiro à meta enquanto evita obstáculos, atravessa zonas especiais e utiliza habilidades para ganhar vantagem sobre os adversários.
 
 O jogo utiliza:
-- movimento livre no mapa;
+- menu inicial
+- movimento livre em mundo aberto;
 - colisões;
 - efeitos sonoros;
 - inteligência artificial;
@@ -23,6 +24,14 @@ O jogo utiliza:
 
 
 # Funcionalidades Implementadas
+
+## Menu Inicial
+O jogo começa num menu simples com dois botões:
+- **Jogar** Começa o jogo
+- **Sair** Sai do jogo
+Quando o jogo acaba o jogador é enviado de volta para o menu.
+
+---
 
 ## Movimento do Jogador
 - Movimento em 8 direções;
@@ -115,7 +124,8 @@ Foi utilizado um sistema baseado em cores para facilitar:
 | Vermelho | Lixo |
 | Amarelo | Spawn do jogador |
 | Verde | Spawn dos inimigos |
-| Laranja | Meta |
+| Amarelo | Poste da meta |
+| Amarelo Escuro | Bandeira da meta |
 
 ---
 
@@ -135,14 +145,10 @@ Foram utilizadas imagens para representar a posição do jogador de forma mais i
 
 # Estrutura do Projeto
 
-```text
-Content/
-│
-├── mapa.png
-├── Pato.png
-├── Pedra.png
-├── Water.mp3
-├── Quack.wav
-├── Leaves.wav
-├── Trash.wav
-└── ...
+- `Program.cs` — ponto de entrada do jogo.
+- `Game1.cs` — classe principal do MonoGame; controla estados, jogo, mapa, desenho e lógica.
+- `MenuInicial.cs` — menu inicial com botões.
+- `Duck.cs` — comportamento da IA dos patos.
+- `Content/` — imagens, sons e fonte.
+- `Icon.ico` / `Icon.bmp` — ícone da aplicação.
+- `Patos em fuga Fianl.csproj` — configuração do projeto.
