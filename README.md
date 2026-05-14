@@ -12,7 +12,7 @@ Descrição do Jogo
 O objetivo é chegar primeiro à meta enquanto evita obstáculos, atravessa zonas especiais e utiliza habilidades para ganhar vantagem sobre os adversários.
 
 O jogo utiliza:
-- movimento livre em mundo aberto;
+- movimento livre no mapa;
 - colisões;
 - efeitos sonoros;
 - inteligência artificial;
